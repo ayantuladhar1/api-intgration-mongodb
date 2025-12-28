@@ -1,19 +1,10 @@
-# Ayan Tuladhar
-# CSC3916_HW3
-# 03/13/2022
-
 Please use the link below to use React App for login
 
 
 https://hwtest-1.herokuapp.com/#/signin
 
-
-
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/ee6b372e5db0b05e329b?action=collection%2Fimport)
 
-
-Assignment Three 
-  
 The purpose of this assignment is to get comfortable working with a NoSQL database (MongoDB).  
 For  this  assignment  you  will  create  a  Users  collection  to  store  users  for  your
 signup  and  signin methods. You will pass Username, Name and Password as part of signup.  To get a token you will 
