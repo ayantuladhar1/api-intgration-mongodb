@@ -1,5 +1,5 @@
-Please use the link below to use React App for login
-
+# API-Integration-MongoDB
+## Please use the link below to use React App for login
 
 https://hwtest-1.herokuapp.com/#/signin
 
@@ -14,79 +14,54 @@ You  will  also  create  Movies  collection  to  store  information  about  movi
 protected with the JWT token received by a signin call.  
 
 
-Requirements 
-Create a collection in MongoDB to hold information about movies 
-
-• Each entry should contain the following 
-
-o Title 
-
-o Year released 
-
-o Genre  (Action,  Adventure,  Comedy,  Drama,  Fantasy,  Horror,  Mystery,  Thriller, 
+## Requirements 
+* Create a collection in MongoDB to hold information about movies 
+* Each entry should contain the following
+  * Title 
+  * Year released 
+  * Genre  (Action,  Adventure,  Comedy,  Drama,  Fantasy,  Horror,  Mystery,  Thriller, 
 Western) 
 
-o Array of three actors that were in the film 
+* Array of three actors that were in the film 
+  * ActorName 
+  * CharacterName 
 
-§ ActorName 
+* The movie collection should have at least five movies 
 
-
-§ CharacterName 
-
-o The movie collection should have at least five movies 
-
-• Create a NodeJS Web API to interact with your database 
-
-o Follow best practices (e.g. /movies collection) 
-
-o Your API should support all CRUD operations (through HTTP POST, PUT, DELETE, GET) 
-
-o Ensure incoming entities contain the necessary information.  For example if the movie 
+* Create a NodeJS Web API to interact with your database 
+  * Follow best practices (e.g. /movies collection) 
+  * Your API should support all CRUD operations (through HTTP POST, PUT, DELETE, GET) 
+  * Ensure incoming entities contain the necessary information.  For example if the movie 
 does  not  contain  actors,  the  entity  should  not  be  created  and  an  error  should  be 
 returned  
 
-• All endpoints should be protected with a JWT token (implement signup, and signin) 
+* All endpoints should be protected with a JWT token (implement signup, and signin) 
+* For this assignment you must implement a User database in Mongo 
+  * Password should be hashed  
+  * Name
+  * Username  
+  * If username exists the endpoint should return an error that the user already exists 
+  * JWT secret needs to be stored in an environment variable 
 
-o For this assignment you must implement a User database in Mongo 
-
-§ Password should be hashed  
-
-§ Name 
-
-§ Username  
-
-o If username exists the endpoint should return an error that the user already exists 
-
-o JWT secret needs to be stored in an environment variable 
-
-• Update  the  Pre-React  CSC3916_HW5  placeholder  project  to  support  /signup  and  /signin 
+* Update  the  Pre-React  CSC3916_HW5  placeholder  project  to  support  /signup  and  /signin 
 methods.  The React Single Page App should use your Assignment 3 API to support those two 
 operations. 
 
-Acceptance Criteria 
+## Acceptance Criteria 
 
-• API Deployed to Heroku and Database deployed to Atlas 
-
-• React Website that allows user to signup and singin (we did this in class) 
-
-• PostMan test collection that  
-
-o Signs Up a user (create a random user name and random password in your pre-test) 
-
-o SignIn a User – parse token and store in postman environment variable 
-
-o A separate call for each endpoint (save a movie, update a movie, delete a movie and 
+* API Deployed to Heroku and Database deployed to Atlas 
+* React Website that allows user to signup and singin (we did this in class) 
+* PostMan test collection that  
+  * Signs Up a user (create a random user name and random password in your pre-test) 
+  * SignIn a User – parse token and store in postman environment variable 
+  * A separate call for each endpoint (save a movie, update a movie, delete a movie and 
 get a movie) 
-
-o Test error conditions (user already exists) 
-
-§ SignUp (user already exist) 
-
-§ Save  Movie  (missing  information  like  actors  (must  be  at  least  three),  title, 
+  * Test error conditions (user already exists) 
+  * SignUp (user already exist) 
+  * Save  Movie  (missing  information  like  actors  (must  be  at  least  three),  title, 
 year or Genre) 
 
-Resources 
+## Resources 
 
-• https://www.mongodb.com/cloud/atlas 
-
-• Create a Free Subscription *Amazon 
+* https://www.mongodb.com/cloud/atlas 
+* Create a Free Subscription *Amazon 
