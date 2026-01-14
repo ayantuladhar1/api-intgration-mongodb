@@ -1,8 +1,6 @@
 # API-Integration-MongoDB
 ## Please use the link below to use React App for login
 
-https://hwtest-1.herokuapp.com/#/signin
-
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/ee6b372e5db0b05e329b?action=collection%2Fimport)
 
 The purpose of this assignment is to get comfortable working with a NoSQL database (MongoDB).  
